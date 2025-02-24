@@ -1,0 +1,49 @@
+.parent {
+    background-color: rgb(45, 11, 243);
+    padding: 20px;
+    width: 400px;
+    height: 150px;
+    position: relative;
+}
+
+.child>div {
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid rgb(221, 26, 26);
+    padding: 10px;
+    position: absolute;
+}
+
+#box {
+    height: 270px;
+    width: 200px;
+    border: 1px solid rgb(221, 26, 26);
+    background-color: rgb(33, 159, 88);
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    display: none;
+
+}
+
+.help {
+    height: 80px;
+    width: 80px;
+    border: 1px solid rgb(221, 26, 26);
+    background-color: rgb(225, 32, 32);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.help:hover+#box {
+    display: block;
+}
+
+::selection {
+    background-color: #000000;
+}
+
+#btn:hover {
+    background-color: red;
+}
